@@ -15,7 +15,7 @@ Usage
 
 ```ruby
 m = Matrix[ [0, 1], [0, 0.75], [1, 0], [0.75, 0] ]
-k = KMeans::Clusterer.new
+k = ClumsyKMeans::Clusterer.new
 k.build(m,2)
 k.clusters[0].std_dev
 ```
