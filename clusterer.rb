@@ -30,7 +30,7 @@ module ClumsyKMeans
       @clusters = []
       sample_initial_centroids().each do |c|
         puts Vector::elements(c)
-        @clusters << KMeans::Cluster.new(Vector::elements(c))
+        @clusters << ClumsyKMeans::Cluster.new(Vector::elements(c))
       end
     end
 
